@@ -40,6 +40,27 @@ namespace COMP003A.LectureActivity7
             {
                 Console.WriteLine("Invalid Number.");
             }
-        }
+
+            try
+            {
+                number = int.Parse(user);
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Invalid number Entered.");
+            }
+        } /* I feel input validation is prefered due to try catch does not always catch a users error 
+           * when inputing an answer, with input validation we can have it loop to try again as a fail safe
+           * vs for me at least the program was not working properly using the catch method, did not crash.
+           */
+
+         /* try catch can handle unexpected exceptions better, which will help the 
+          * entire program from crashing completely.
+         */
+
+         /* During the debugging I was able to see the differences in using a foreach loop 
+          * as well as the for loop. We see the index control during the running of the for loop vs 
+          * the foreach loop it just smoothly goes past that step.
+          */
     }
 }

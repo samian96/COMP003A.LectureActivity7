@@ -12,6 +12,9 @@ namespace COMP003A.LectureActivity7
             }
 
             List<string> names = new List<string>();
+            names.Add("Sam");
+            names.Add("Haylee");
+            names.Add("Jiji");
         }
     }
 }

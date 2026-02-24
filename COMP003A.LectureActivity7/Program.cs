@@ -19,6 +19,27 @@ namespace COMP003A.LectureActivity7
             {
                 Console.WriteLine(name);
             }
+
+            for (int i = 0; i < names.Count; i++)
+            {
+                Console.WriteLine(names[i]);
+            }
+
+            Console.Write("Please enter a number between 1 and 3: ");
+            string user = Console.ReadLine();
+
+            int number;
+
+            bool userInput = int.TryParse(user, out number);
+
+            if (userInput && number > 1 && number is < 3)
+            {
+                Console.WriteLine("Valid Number.");
+            } 
+            else
+            {
+                Console.WriteLine("Invalid Number.");
+            }
         }
     }
 }

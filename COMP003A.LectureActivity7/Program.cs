@@ -15,6 +15,10 @@ namespace COMP003A.LectureActivity7
             names.Add("Sam");
             names.Add("Haylee");
             names.Add("Jiji");
+            foreach (string name in names)
+            {
+                Console.WriteLine(name);
+            }
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿namespace COMP003A.LectureActivity7
+﻿using System.Collections.Generic;
+namespace COMP003A.LectureActivity7
 {
     internal class Program
     {
@@ -9,6 +10,8 @@
             {
                 Console.WriteLine(score[i]);
             }
+
+            List<string> names = new List<string>();
         }
     }
 }
